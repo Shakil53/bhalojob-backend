@@ -80,7 +80,7 @@ userSchema.pre("save", async function (next) {
     this.userName = `@${cleanFullName}BhaloJob${randomString}`;
   }
 
-//gitlab---
+//gitlab--- shakil
 
   // if (!this.userName && this.fullName) {
   //   const uid = this._id
