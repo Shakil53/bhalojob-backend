@@ -4,7 +4,7 @@ import { ApiResponse } from "../../utils/ApiResponse.js";
 import { ApiError } from "../../utils/ApiError.js";
 
 const registerUser = asyncHandler(async (req, res) => {
-  const { fullName, email, address, password } = req.body;
+  const { fullName, email, address, password, role } = req.body;
 
   console.log("fullName: ", fullName);
 
@@ -19,7 +19,8 @@ const registerUser = asyncHandler(async (req, res) => {
     email,
     address,
     password,
-    role: "Executive",
+    role,
+    // role: "Executive",
   });
 
   await user.save();
